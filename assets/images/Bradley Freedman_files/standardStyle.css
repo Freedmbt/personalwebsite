@@ -1,0 +1,108 @@
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.button {
+  background: none;
+  margin-top: 10px;
+  margin-right: 75px;
+  width: 0px;
+  border: 0;
+  display: inline-block;
+}
+
+button:active {
+  border-style: outset;
+}
+
+.intro-bg {
+  background: url("assets/images/bg.png") fixed center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.col-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 400px;
+  background: rgba(114, 186, 94, 0.05);
+}
+
+.about-img {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url("assets/fonts/nunitosans-extralight-webfont.woff");
+}
+
+.text-header {
+  font-family: Nunito;
+  color: #ffffff;
+  font-size: 2.2vw;
+}
+
+[data-aos="translate-left-no-fade"] {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+[data-aos="translate-left-no-fade"].aos-animate {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+[data-aos="move-across"] {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  background-color: #93e6ff;
+  -webkit-transition-property: background-color, -webkit-transform;
+  transition-property: background-color, -webkit-transform;
+  transition-property: transform, background-color;
+  transition-property: transform, background-color, -webkit-transform;
+}
+
+[data-aos="move-across"].aos-animate {
+  -webkit-transform: translateX(-58vw);
+          transform: translateX(-58vw);
+  background-color: #0d9bc7;
+}
+
+.card {
+  border-radius: 4px;
+  background: #fff;
+  -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+}
+
+.no-col-padding {
+  padding: 0 !important;
+  margin: 0 !important;
+  color: #000;
+}
+
+.transition-piece {
+  position: absolute;
+  width: 41.85vw;
+  height: 1700px;
+  z-index: 10;
+}
+/*# sourceMappingURL=standardStyle.css.map */

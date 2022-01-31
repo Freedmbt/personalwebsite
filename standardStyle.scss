@@ -1,0 +1,105 @@
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.button {
+    background: none;
+    margin-top: 10px;
+    margin-right: 75px;
+    width: 0px;
+    border: 0;
+    display: inline-block;
+}
+
+button:active {
+    border-style: outset;
+  }
+
+.intro-bg {
+    background: url('assets/images/bg.png') fixed center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.col-5 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 400px;
+    background: rgba(114, 186, 94, 0.05);
+}
+
+.about-img {
+  position: sticky;
+  bottom: 0;
+  align-self: flex-end;
+  max-width: 100%; 
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url("assets/fonts/nunitosans-extralight-webfont.woff");
+}
+
+.text-header {
+  font-family: Nunito;
+  color: #ffffff;
+  font-size: 2.2vw;
+}
+
+[data-aos="translate-left-no-fade"] {
+  transform: translateX(100%);
+  transition-property: transform;
+  
+  &.aos-animate {
+    transform: translateX(0%);
+  }
+}
+
+[data-aos="move-across"] {
+  transform: translateX(148%);
+  background-color: #93e6ff;
+  transition-property: transform, background-color;
+  
+  &.aos-animate {
+    transform: translateX(5%);
+    background-color: #0d9bc7;
+  }
+}
+
+.card{
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s 
+  box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+.no-col-padding {
+  padding: 0 !important;
+  margin: 0 !important;
+  color: #000;
+}
+
+  .transition-piece {
+    position: absolute;
+    width: 42.8vw;
+    height: 1700px;
+    z-index: 10;
+  }
+
+  [data-aos="new"] {
+    transform: translateX(0%);
+    opacity: 1;
+    transition-property: transform, opacity;
+    
+    &.aos-animate {
+      transform: translateX(100vw);
+      opacity: 0;
+    }
+}
+
+
+
+  
