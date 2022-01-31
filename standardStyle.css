@@ -70,8 +70,8 @@ button:active {
 }
 
 [data-aos="move-across"] {
-  -webkit-transform: translateX(148%);
-          transform: translateX(148%);
+  -webkit-transform: translateX(152%);
+          transform: translateX(152%);
   background-color: #93e6ff;
   -webkit-transition-property: background-color, -webkit-transform;
   transition-property: background-color, -webkit-transform;
@@ -106,7 +106,7 @@ button:active {
   z-index: 10;
 }
 
-[data-aos="new"] {
+[data-aos="headshot-move"] {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
   opacity: 1;
@@ -116,9 +116,9 @@ button:active {
   transition-property: transform, opacity, -webkit-transform;
 }
 
-[data-aos="new"].aos-animate {
-  -webkit-transform: translateX(100vw);
-          transform: translateX(100vw);
+[data-aos="headshot-move"].aos-animate {
+  -webkit-transform: translateX(5%);
+          transform: translateX(5%);
   opacity: 0;
 }
 /*# sourceMappingURL=standardStyle.css.map */
