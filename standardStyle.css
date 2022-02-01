@@ -121,4 +121,20 @@ button:active {
           transform: translateX(5%);
   opacity: 0;
 }
+
+[data-aos="full-body-move"] {
+  -webkit-transform: translateX(-130%);
+          transform: translateX(-130%);
+  opacity: 0;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+}
+
+[data-aos="full-body-move"].aos-animate {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  opacity: 1;
+}
 /*# sourceMappingURL=standardStyle.css.map */

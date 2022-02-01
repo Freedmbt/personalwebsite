@@ -89,17 +89,26 @@ button:active {
     z-index: 10;
   }
 
-  [data-aos="headshot-move"] {
-    transform: translateX(0%);
-    opacity: 1;
-    transition-property: transform, opacity;
-    
-    &.aos-animate {
-      transform: translateX(5%);
-      opacity: 0;
-    }
+[data-aos="headshot-move"] {
+  transform: translateX(0%);
+  opacity: 1;
+  transition-property: transform, opacity;
+  
+  &.aos-animate {
+    transform: translateX(5%);
+    opacity: 0;
+  }
 }
 
-
+[data-aos="full-body-move"] {
+  transform: translateX(-130%);
+  opacity: 0;
+  transition-property: transform, opacity;
+  
+  &.aos-animate {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+}
 
   
