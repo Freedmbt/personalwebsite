@@ -132,7 +132,7 @@ button:active {
   transition-property: transform, margin-left;
   
   &.aos-animate {
-    transform: translate(-41vw, 40vh);
+    transform: translate(-500%, -50%);
     margin-left: 15vw;
   }
 }
